@@ -44,7 +44,7 @@ public class simple_calculator {
                 break;
         
             default:
-                System.out.println("Error!! Please use Operation: +, -, *, / only.");
+                System.out.println("Invalid Operation || Please use Operation: +, -, *, / only.");
                 return;
                 
         }
