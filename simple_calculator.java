@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class simple_calculator {
 
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
@@ -39,8 +40,11 @@ public class simple_calculator {
                 break;
         
             default:
-                break;
+                System.out.println("Error!! Please use Operation: +, -, *, / only.");
+                return;
+                
         }
+        //display result
         System.out.println("Result: " + result);
         sc.close();
     }
